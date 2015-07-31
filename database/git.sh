@@ -1,11 +1,12 @@
 #!/bin/bash
 # declare variables
 FilePath=$PWD/
+Branch=content-monitor-dev
 # cp the new file
 echo Copy file from ../wp-content/uploads/ to this current folder $FilePath
 cp ../wp-content/uploads/recorded-queries*.sql ./
 #implement the github flow simply
-echo Switch to branch \'content-monitor\'
+echo Switch to branch \'$Branch\'
 git checkout content-monitor
 echo Add the file to index
 git add *
@@ -14,4 +15,4 @@ git commit -m "Auto commit happening when the WP content (via admin GUI) is chan
 # cache credential forever
 git config credential.helper store
 echo Push to the Github repo:
-git push origin content-monitor
+git push origin $Branch
