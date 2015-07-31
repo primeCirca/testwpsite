@@ -1,6 +1,9 @@
 #!/bin/bash
 # declare variables
 FilePath=$PWD/
+# cp the new file
+echo Copy file from ../wp-content/uploads/ to this current folder $FilePath
+cp ../wp-content/uploads/recorded-queries*.sql ./
 #implement the github flow simply
 echo Switch to branch \'content-monitor\'
 git checkout content-monitor
