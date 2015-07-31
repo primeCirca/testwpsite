@@ -7,7 +7,7 @@ echo Copy file from ../wp-content/uploads/ to this current folder $FilePath
 cp ../wp-content/uploads/recorded-queries*.sql ./
 #implement the github flow simply
 echo Switch to branch \'$Branch\'
-git checkout content-monitor
+git checkout $Branch
 echo Add the file to index
 git add *
 echo Commit the changes in this directory \'$FilePath\':
