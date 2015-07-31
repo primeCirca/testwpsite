@@ -10,5 +10,5 @@ echo Commit the changes in this directory \'$FilePath\':
 git commit -m "Auto commit happening when the WP content (via admin GUI) is changed"
 # cache credential forever
 git config credential.helper store
-echo Push to the Github repo.
+echo Push to the Github repo:
 git push origin content-monitor
