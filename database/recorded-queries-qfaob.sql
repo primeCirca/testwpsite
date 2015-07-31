@@ -16,3 +16,4 @@ DELETE FROM `wp_options` WHERE `option_name` = 'auto_updater.lock' ;
 UPDATE `wp_options` SET `option_value` = '' WHERE `option_name` = 'db_upgraded' ;
 INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('can_compress_scripts', '1', 'yes') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) ;
 # a test line
+# a new test line
