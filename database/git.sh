@@ -3,8 +3,8 @@
 FilePath=$PWD/
 Branch=content-monitor
 # cp the new file
-echo Copy file from ../wp-content/uploads/ to this current folder $FilePath
-cp ../wp-content/uploads/recorded-queries-qfaob.sql ./recorded-queries-dev.sql
+echo Copy file from ../wp-content/uploads/recorded-queries-devsite.sql to this current folder $FilePath/recorded-queries-devsite.sql
+cp ../wp-content/uploads/recorded-queries-devsite.sql ./recorded-queries-devsite.sql
 #implement the github flow simply
 echo Switch to branch \'$Branch\'
 git checkout $Branch
