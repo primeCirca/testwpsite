@@ -1,7 +1,7 @@
 #!/bin/bash
 # declare variables
 FilePath=$PWD/
-Branch=content-monitor-dev
+Branch=content-monitor
 # cp the new file
 echo Copy file from ../wp-content/uploads/ to this current folder $FilePath
 cp ../wp-content/uploads/recorded-queries*.sql ./
