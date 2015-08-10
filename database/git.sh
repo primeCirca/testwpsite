@@ -1,10 +1,10 @@
 #!/bin/bash
-# declare variables
+# declare variables (FilePath: normally it's run under the wp-admin context)
 FilePath=$PWD/
 Branch=content-monitor
 # cp the new file
-echo Copy file from ../wp-content/uploads/recorded-queries-devsite.sql to this current folder $FilePath/recorded-queries-devsite.sql
-cp ../wp-content/uploads/recorded-queries-devsite.sql ./recorded-queries-devsite.sql
+echo Copy file from ../wp-content/uploads/recorded-queries-devsite.sql to this current folder ../database/recorded-queries-devsite.sql
+cp ../wp-content/uploads/recorded-queries-devsite.sql ../wp-content/recorded-queries-devsite.sql
 #implement the github flow simply
 echo Switch to branch \'$Branch\'
 git checkout $Branch
