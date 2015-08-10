@@ -1,4 +1,4 @@
-Copy file from ../wp-content/uploads/ to this current folder /Users/duyphando/Documents/htdocs/testwpsite/wp-admin/
+Copy file from ../wp-content/uploads/recorded-queries-devsite.sql to this current folder ../database/recorded-queries-devsite.sql
 Switch to branch 'content-monitor'
 Add the file to index
 Commit the changes in this directory '/Users/duyphando/Documents/htdocs/testwpsite/wp-admin/':
