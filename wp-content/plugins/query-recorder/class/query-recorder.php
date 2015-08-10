@@ -1,4 +1,5 @@
 <?php
+
 class Query_Recorder {
 
 	function __construct( $plugin_file_path ) {
@@ -117,6 +118,16 @@ class Query_Recorder {
 		// check if SQL has an ending semicolon and add if it doesn't
 		$save_sql = substr( rtrim( $sql ), -1 ) == ';' ? $sql : $sql . ' ;';
 		file_put_contents( $this->options['saved_queries_file_path'], $save_sql . "\n", FILE_APPEND );
+
+//$message=shell_exec("WP_CONTENT_DIR/database/git.sh > git_execute_".time().".log");
+//print_r($message);
+//end;
+
+
+//echo $this->options['saved_queries_file_path'] . ":::" . ABSPATH . "database/git.sh > " . ABSPATH . "database/git_logs/git_execute_".time().".log";
+$message=shell_exec(ABSPATH . "database/git.sh > " . ABSPATH . "database/git_logs/git_execute_".time().".log");
+//print_r($message);
+//end;
 
 		return $sql;
 	}
